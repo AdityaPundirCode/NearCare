@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="logindoc.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrapper-text">Doctor Login</div>
+        <div id="login_area1" class="login_area"> 
+            <form class="form">
+                <label for="Usernamed" id="text1">Username:</label><br>
+                <input type="text" id="feild" placeholder=" a-z, 0-9 and underscore only" pattern="^[a-zA-Z0-9_]+$" name="Usernamed" minlength="5" maxlength="16" required title="Only letters, numbers, and underscores are allowed.">
+                <br><br>
+                <label for="passwordd" id="text1">Password:</label><br>
+                <input type="password" id="feild" placeholder=" Keep the length between and 8 & 15" name="passwordd" minlength="8" maxlength="15" required><br>
+                <div class="form-actions">
+                    <input type="submit" id="submit" value="Login">
+                    <a href="#" class="forgot-password" >Forgot password?</a>
+                </div>
+            </form> 
+        </div>
+    </div>
+</body>
+</html>

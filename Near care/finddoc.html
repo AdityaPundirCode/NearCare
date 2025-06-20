@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Details</title>
+    <style>
+         * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    background: hsl(0, 0%, 11%);
+    color: #fff;
+    padding-top: 10px;
+  }
+  
+  header h1 {
+    text-align: center;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 16px 32px;
+  }
+  nav ul {
+  list-style: none;
+  text-align: center;
+  list-style-type: none;
+  padding: 8px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  gap: 10px;
+  }
+  
+  nav ul li {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:  5px;
+    width: 80px; 
+    height: 60px; 
+    border: 1px solid transparent;
+    padding-inline: 8px;
+    padding-block: 4px;
+    transition: all 0.3s ease; 
+    border-radius: 5px;
+  }
+
+  nav ul li:hover {
+   border-color: hsl(0, 0%, 83%);
+   transform: scale(1.15);
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+        .container {
+          margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            max-width: 600px;
+        }
+        .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-info {
+    flex-grow: 1; /* Allow doctor info to take up remaining space */
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-now {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.book-now:hover {
+    background-color: #0056b3;
+}
+        .card h3 {
+            margin: 0 0 10px;
+        }
+        .card p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <nav>
+        <h1>NearCare</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">Find Doctors</a></li>
+          <li><a href="loginclient.html">Login /<br> Register</a></li>
+          <li><a href="#contact">Video Consult</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+    <h1>Details for <span id="city-name"></span></h1>
+    <div class="container" id="details-container"></div>
+    <script src="search.js"></script>
+</body>
+</html>
